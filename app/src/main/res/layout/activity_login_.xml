@@ -76,7 +76,7 @@
         android:id="@+id/tv_donthaveAc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="196dp"
+        android:layout_marginTop="56dp"
         android:text="Don't have an Account? Register here"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.827"
