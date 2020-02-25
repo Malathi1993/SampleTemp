@@ -24,8 +24,14 @@ Button Login;
          Login.setOnClickListener(new View.OnClickListener() {
              @Override
              public void onClick(View v) {
-                 Intent intent = new Intent(OTP_Activity.this, MainActivity.class);
-                 startActivity(intent);
+                 if (EnterOtp.getText().toString().trim().length() == 0) {
+                     EnterOtp.setError("Username is not entered");
+                     EnterOtp.requestFocus();
+                 } else {
+
+                     Intent intent = new Intent(OTP_Activity.this, MainActivity.class);
+                     startActivity(intent);
+                 }
              }
          });
     }
