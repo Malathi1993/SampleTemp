@@ -17,6 +17,8 @@ public class Login_Activity extends AppCompatActivity {
     TextView Forgotpwd;
     TextView Donthave;
     Button Register;
+    String regexStr = "^[0-9]$";
+    String regexStr1 ="\\d{3}";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
