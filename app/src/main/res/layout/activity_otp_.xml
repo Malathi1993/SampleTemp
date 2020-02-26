@@ -7,6 +7,7 @@
     android:background="@color/colorWhite"
     tools:context=".OTP_Activity">
 
+
     <TextView
         android:id="@+id/tv_otpmsg"
         android:layout_width="wrap_content"
@@ -16,10 +17,22 @@
         android:textStyle="bold"
         android:inputType="phone"
         android:textSize="20dp"
-        android:text="Wait OTP will send to Mobile Number 1236547890"
+        android:text="Wait OTP will send to Mobile Number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="7788996655"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_otpmsg" />
 
     <EditText
         android:id="@+id/et_enterOtp"
@@ -35,21 +48,21 @@
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_otpmsg" />
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <Button
         android:id="@+id/btn_otp_login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
         android:layout_marginRight="30dp"
-        android:text="LOGIN"
-        android:gravity="center"
-        android:textColor="@color/colorWhite"
         android:background="@android:color/holo_purple"
+        android:gravity="center"
+        android:text="LOGIN"
+        android:textColor="@color/colorWhite"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/et_enterOtp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
