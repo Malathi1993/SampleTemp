@@ -44,7 +44,7 @@ public class Login_Activity extends AppCompatActivity {
                     Password.setError("Password is not entered");
                     Password.requestFocus();
                 } else {
-                    Intent intent = new Intent(Login_Activity.this, OTP_Activity.class);
+                    Intent intent = new Intent(Login_Activity.this, Registation_Activity.class);
                     startActivity(intent);
                 }
             }

@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 public class OTP_Activity extends AppCompatActivity {
 TextView OtpText;
+TextView Cellno;
 EditText EnterOtp;
 Button Login;
     @Override
@@ -18,6 +19,7 @@ Button Login;
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_otp_);
          OtpText =(TextView)findViewById(R.id.tv_otpmsg);
+         Cellno =(EditText)findViewById(R.id.et_Cellno);
          EnterOtp =(EditText) findViewById(R.id.et_enterOtp);
          Login =(Button) findViewById(R.id.btn_otp_login);
 
